@@ -1,0 +1,153 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-form {
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeSlide 0.6s ease;
+  transition: all 0.4s ease-in-out;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a237e;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.4rem;
+  background-color: #f5f7fa;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-group:focus-within {
+  box-shadow: 0 0 0 2px #0288d1;
+  border-color: #0288d1;
+}
+
+.input-group .icon {
+  margin-right: 0.6rem;
+  color: #0288d1;
+  font-size: 1.1rem;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.4rem 0;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-btn:hover {
+  background-color: #01579b;
+  transform: translateY(-1px);
+}
+
+.auth-bottom-text {
+  text-align: center;
+  margin-top: 1.8rem;
+  font-size: 0.97rem;
+  color: #555;
+}
+
+.auth-toggle-link {
+  color: #0288d1;
+  font-weight: 600;
+  margin-left: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-toggle-link:hover {
+  text-decoration: underline;
+  color: #01579b;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 2rem;
+  }
+
+  .auth-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .auth-btn {
+    font-size: 1rem;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+  }
+}
+
+/* Style for select (role dropdown) */
+.input-group select {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.4rem 0;
+  color: #333;
+  appearance: none; /* Hide native arrow in some browsers */
+  background-color: transparent;
+}
+
+/* Optional: add a custom arrow indicator */
+.input-group select:focus {
+  outline: none;
+}
+
+/* Style the select's parent (already present as .input-group) */
+.input-group select option {
+  background: #ffffff;
+  color: #333;
+  font-size: 1rem;
+}

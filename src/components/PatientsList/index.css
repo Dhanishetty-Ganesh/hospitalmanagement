@@ -1,0 +1,49 @@
+.patients-list-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  background: #fdfdfd;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
